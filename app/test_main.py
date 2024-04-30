@@ -4,7 +4,6 @@ import datetime
 import pytest
 
 
-
 @pytest.fixture
 def test_data() -> list:
     return [
