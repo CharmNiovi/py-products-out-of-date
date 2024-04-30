@@ -4,6 +4,7 @@ import datetime
 import pytest
 
 
+
 @pytest.fixture
 def test_data() -> list:
     return [
@@ -28,9 +29,9 @@ def test_data() -> list:
 class MockedDate(datetime.date):
     @classmethod
     def today(cls) -> datetime.date:
-        return cls(2022, 2, 3)
+        return cls(2024, 4, 9)
 
 
 @patch("datetime.date", new=MockedDate)
 def test_outdated_products(test_data: list) -> None:
-    assert outdated_products(test_data) == ["duck"]
+    assert outdated_products(test_data) == ["salmon"]
