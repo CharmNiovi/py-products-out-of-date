@@ -9,17 +9,17 @@ def test_data() -> list:
     return [
         {
             "name": "salmon",
-            "expiration_date": datetime.date(2022, 2, 10),
+            "expiration_date": datetime.date(2024, 4, 8),
             "price": 600
         },
         {
             "name": "chicken",
-            "expiration_date": datetime.date(2022, 2, 5),
+            "expiration_date": datetime.date(2024, 4, 9),
             "price": 120
         },
         {
             "name": "duck",
-            "expiration_date": datetime.date(2022, 2, 1),
+            "expiration_date": datetime.date(2024, 4, 10),
             "price": 160
         }
     ]
